@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(4, 8, 18);
+    color: white;
+}
+
+header, section {
+    width: 40%; /* Define a largura da div que você deseja centralizar */
+    margin: 0 auto; /* Define as margens laterais esquerda e direita como "auto" */
+}
+
+.tarefa_txt {
+    width: 500px;
+    padding: 10px; /* Define o espaçamento interno (padding) do input */
+    border: 1px solid #ccc; /* Define uma borda sólida com a cor cinza */
+    border-radius: 5px; /* Define um raio de borda arredondado */
+    font-size: 16px; /* Define o tamanho da fonte do texto no input */
+    color: #333; /* Define a cor do texto no input */
+    background-color: #f2f2f2; /* Define a cor de fundo do input */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Define uma sombra para dar profundidade ao input */
+}  
+
+.form_add {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.tarefa {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    background-color: #011626;
+    height: 40px;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.tarefaName {
+    background-color: #011626;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn_add {
+    background-color: #11203d; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.btn_add:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.btn_editar, .btn_remover {
+    background-color: #11203d; /* Green */
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 4px;
+}
