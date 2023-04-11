@@ -17,14 +17,17 @@ btn_add.addEventListener('click', () => {
     inp = document.createElement('input')
     inp.value = `${tarefa_txt.value}`
     inp.setAttribute('readonly', 'readonly')
+    inp.setAttribute('class', 'tarefaName')
 
     div1 = document.createElement('div')
     div1.setAttribute('class', 'actions')
 
     b1 = document.createElement('button')
+    b1.setAttribute('class', 'btn_editar')
     b1.innerText = 'Editar'
 
     b2 = document.createElement('button')
+    b2.setAttribute('class', 'btn_remover')
     b2.innerText = "Apagar"
 
     div1.appendChild(b1)
@@ -36,8 +39,8 @@ btn_add.addEventListener('click', () => {
     lista_tarefas.push(div)
 
     lista_tarefas.map((i) => {
-        console.log(i)
+        tarefas.appendChild(i)
     })
 
-    console.log()
+    console.log(tarefas)
 })

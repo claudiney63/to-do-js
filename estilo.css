@@ -4,7 +4,8 @@ body {
 }
 
 header, section {
-    width: 40%; /* Define a largura da div que você deseja centralizar */
+    position: relative;
+    width: 45%; /* Define a largura da div que você deseja centralizar */
     margin: 0 auto; /* Define as margens laterais esquerda e direita como "auto" */
 }
 
@@ -33,6 +34,7 @@ header, section {
     height: 40px;
     border-radius: 20px;
     padding: 8px;
+    margin: 6px;
 }
 
 .tarefaName {
@@ -71,4 +73,5 @@ header, section {
     font-size: 14px;
     border-radius: 20px;
     margin-top: 4px;
+    margin-right: 5px;
 }
