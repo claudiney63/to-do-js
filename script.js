@@ -42,5 +42,20 @@ btn_add.addEventListener('click', () => {
         tarefas.appendChild(i)
     })
 
-    console.log(tarefas)
+    b1.addEventListener('click', () => {
+
+    })
+
+    b2.addEventListener('click', (e) => {
+        e.target.parentNode.parentNode.remove()
+        lista_tarefas = lista_tarefas.filter(
+            list => {
+                return list != e.target.parentNode.parentNode
+            }
+        )
+
+        lista_tarefas.map((i) => {
+            tarefas.appendChild(i)
+        })
+    })
 })
