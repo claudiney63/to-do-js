@@ -42,8 +42,23 @@ btn_add.addEventListener('click', () => {
         tarefas.appendChild(i)
     })
 
-    b1.addEventListener('click', () => {
+    tarefa_txt.value = ''
 
+    b1.addEventListener('click', (e) => {
+        node = e.target.parentNode.parentNode
+
+       if(e.target.innerText == 'Editar') {
+            node.children[0].removeAttribute('readonly')
+            b1.setAttribute('class', 'nameSave')
+            e.target.innerText = 'Salvar'
+        } else {
+            node.children[0].setAttribute('readonly', true)
+            b1.classList.remove('nameSave')
+            b1.setAttribute('class', 'btn_editar')
+            e.target.innerText = 'Editar'
+        }
+
+        console.log(node.children[0])
     })
 
     b2.addEventListener('click', (e) => {

@@ -44,6 +44,21 @@ header, section {
     font-size: 16px;
     padding: 10px;
     border-radius: 20px;
+    outline: 0;
+}
+
+.nameSave {
+    background-color: #11203d; 
+    border: none;
+    color: green;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 4px;
+    margin-right: 5px;
 }
 
 .btn_add {
@@ -63,7 +78,7 @@ header, section {
 }
 
 .btn_editar, .btn_remover {
-    background-color: #11203d; /* Green */
+    background-color: #11203d;
     border: none;
     color: white;
     padding: 8px;
