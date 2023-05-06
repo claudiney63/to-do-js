@@ -132,6 +132,12 @@ btn_search.addEventListener('click', () => {
         }
     }
 
+    for(child of tarefas.children) {
+        if(child != tarefas.children[0]) {
+            child.remove()
+        }
+    }
+
     if(tarefa_casa.checked){
         lista_tarefa_casa.map((i) => {
             tarefas.appendChild(i)
