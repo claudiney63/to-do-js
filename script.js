@@ -126,8 +126,6 @@ btn_add.addEventListener('click', () => {
 
 btn_search.addEventListener('click', () => {
 
-    console.log(tarefas.children[0])
-
     for(child of tarefas.children) {
         if(child != tarefas.children[0]) {
             child.remove()
@@ -148,5 +146,11 @@ btn_search.addEventListener('click', () => {
         lista_tarefa_trabalho.map((i) => {
             tarefas.appendChild(i)
         })
+    }
+
+    if(tarefa_casa.checked === false && tarefa_escola.checked === false && tarefa_trabalho.checked === false) {
+        lista_tarefas.map((i) => {
+            tarefas.appendChild(i)
+        }) 
     }
 })
